@@ -6,7 +6,7 @@ warnings.filterwarnings("ignore", category=FutureWarning, module="whisper")
 model = whisper.load_model("medium")
 
 # Transcribir el audio
-result = model.transcribe("JUNTA.mp4")
+result = model.transcribe("video.mp4")
 
 # Guardar el texto en un archivo .txt
 with open("transcripcion.txt", "w") as file:
